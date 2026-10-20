@@ -1,6 +1,6 @@
 {
   "publicClientUrl": "https://nsokha.github.io/",
-  "signalingUrl": "ws://localhost:8080/signal",
+  "signalingUrl": "wss://62.238.16.21/danjee/signal",
   "iceUrl": "",
   "stunUrl": "stun:62.238.16.21:3478",
   "turnUrl": ""
