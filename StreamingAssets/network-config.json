@@ -1,7 +1,7 @@
 {
   "publicClientUrl": "https://nsokha.github.io/",
   "signalingUrl": "wss://62.238.16.21/danjee/signal",
-  "iceUrl": "",
+  "iceUrl": "https://62.238.16.21/danjee/ice",
   "stunUrl": "stun:62.238.16.21:3478",
   "turnUrl": ""
 }
