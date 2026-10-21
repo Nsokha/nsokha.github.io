@@ -1,6 +1,6 @@
 // Large Unity files are stored in chunks so the prebuilt client fits in an ordinary Git repository.
 (() => {
-  const manifest = {"files":[{"url":"Build/WebClient.data.unityweb","size":170017093,"parts":["Build/WebClient.data.unityweb.part000","Build/WebClient.data.unityweb.part001"]}]};
+  const manifest = {"files":[{"url":"Build/ForestCampOnline-20261021-130211.data.unityweb","size":201243648,"parts":["Build/ForestCampOnline-20261021-130211.data.unityweb.part000","Build/ForestCampOnline-20261021-130211.data.unityweb.part001","Build/ForestCampOnline-20261021-130211.data.unityweb.part002"]}]};
   const fetchFile = window.fetch.bind(window);
   const files = new Map(manifest.files.map(file => [new URL(file.url, document.baseURI).href, file]));
   window.fetch = async function(resource, init) {
