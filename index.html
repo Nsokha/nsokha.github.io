@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Danjee | Forest Camp Online</title>
+    <title>Danjee | Guild Hub</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  <script src="split-build-ForestCampOnline-20261021-133302.js"></script>
+  <link rel="stylesheet" href="mobile-controls.css?v=62f51aec3da1b57f0f34bc3c98a279751cf151cfab5894563a98dd538105cb1d">
+<script src="split-build-GuildHub-20261022-103507.js?v=d955cc2eb689d201fa75520c3ef6d33b52995accf17ba73a57c91b78c5f51d74"></script>
 </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -24,6 +25,7 @@
         <div id="unity-build-title">Danjee</div>
       </div>
     </div>
+    <script src="mobile-controls.js?v=f110f3fcc42ef76990c6a9f3da5425a4192dee1d856a5ff9f395ee0c4dfb7eeb"></script>
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
@@ -53,12 +55,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ForestCampOnline-20261021-133302.loader.js";
+      var loaderUrl = buildUrl + "/GuildHub-20261022-103507.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/ForestCampOnline-20261021-133302.data.unityweb",
-        frameworkUrl: buildUrl + "/ForestCampOnline-20261021-133302.framework.js.unityweb",
-        codeUrl: buildUrl + "/ForestCampOnline-20261021-133302.wasm.unityweb",
+        dataUrl: buildUrl + "/GuildHub-20261022-103507.data.unityweb",
+        frameworkUrl: buildUrl + "/GuildHub-20261022-103507.framework.js.unityweb",
+        codeUrl: buildUrl + "/GuildHub-20261022-103507.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Danjee",
@@ -72,6 +74,7 @@
         // },
       };
 
+      if (window.danjeeMobile && window.danjeeMobile.state.enabled) config.devicePixelRatio = 1;
       // By default, Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
       // Set this to false if you want to decouple this synchronization from
@@ -93,7 +96,7 @@
 
         var meta = document.createElement('meta');
         meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes, viewport-fit=cover';
         document.getElementsByTagName('head')[0].appendChild(meta);
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
@@ -111,6 +114,10 @@
 
       document.querySelector("#unity-loading-bar").style.display = "block";
 
+      // Danjee content-addressed build cache
+      loaderUrl = window.danjeeBuildUrl(loaderUrl);
+      for (const key of ['dataUrl', 'frameworkUrl', 'codeUrl']) config[key] = window.danjeeBuildUrl(config[key]);
+      config.cacheControl = () => 'no-store';
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
@@ -118,6 +125,7 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
+                if (window.danjeeMobile && window.danjeeMobile.setReady) window.danjeeMobile.setReady();
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };

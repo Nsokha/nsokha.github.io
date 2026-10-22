@@ -1,0 +1,21 @@
+.mobile-controls, .mobile-controls body { margin:0; width:100%; height:100%; overflow:hidden; overscroll-behavior:none; background:#151818; }
+.mobile-controls #unity-container { position:fixed; inset:0; width:100%; height:100%; transform:none; }
+.mobile-controls #unity-canvas { display:block; width:100% !important; height:100% !important; touch-action:none; }
+.mobile-controls #unity-footer { display:none; }
+#mobile-hud { display:none; position:fixed; inset:0; pointer-events:none; z-index:20; user-select:none; -webkit-user-select:none; }
+#mobile-hud.ready { display:block; }
+#mobile-actions { --size:56px; position:absolute; right:max(12px,env(safe-area-inset-right)); bottom:max(20px,env(safe-area-inset-bottom)); width:228px; height:258px; }
+#mobile-actions button { position:absolute; width:var(--size); height:var(--size); border-radius:50%; border:1px solid #e9ca8e99; background:radial-gradient(circle at 40% 25%,#514734e6,#161e22e8); box-shadow:0 3px 12px #0008,inset 0 0 10px #e4bf6820; color:#ffedc9; font:25px Georgia,serif; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; padding:0; pointer-events:auto; touch-action:none; -webkit-tap-highlight-color:transparent; }
+#mobile-actions small { font:10px system-ui,sans-serif; }
+#mobile-actions .pressed, #mobile-actions [aria-pressed=true] { background:#9a6a2bec; border-color:#ffdf8c; box-shadow:0 0 15px #e8bc5877; }
+#mobile-actions .attack { left:5px; top:119px; width:64px; height:64px; }
+#mobile-actions .kick { left:28px; top:187px; }
+#mobile-actions .block { left:18px; top:55px; }
+#mobile-actions .dodge { left:94px; top:202px; }
+#mobile-actions .super-one { left:76px; top:14px; }
+#mobile-actions .super-two { left:145px; top:3px; }
+#mobile-stick { position:fixed; width:112px; height:112px; margin:-56px; border:1px solid #f5d99d88; border-radius:50%; background:#18202566; box-shadow:0 0 0 7px #fff1; }
+#mobile-stick[hidden] { display:none; }
+#mobile-stick i { display:block; position:absolute; left:34px; top:34px; width:44px; height:44px; border-radius:50%; background:#e4cf9d99; border:1px solid #fff8; }
+@media (orientation:landscape) and (max-height:500px) { #mobile-actions { bottom:max(10px,env(safe-area-inset-bottom)); transform:scale(.85); transform-origin:bottom right; } }
+@media (max-width:360px) { #mobile-actions { right:8px; transform:scale(.9); transform-origin:bottom right; } }

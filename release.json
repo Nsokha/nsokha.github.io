@@ -1,6 +1,39 @@
 {
-  "version": "ForestCampOnline-20261021-133302",
-  "scene": "Assets/GAME/Levels/Forest camp/Bandit_P2P.unity",
-  "source": "BanditCamp_Claude",
-  "builtAt": "2026-10-21T11:33:02.9148469Z"
+  "version": "GuildHub-20261022-103507",
+  "scene": "Assets/GAME/Levels/_Hub/Hub.unity",
+  "missionScene": "Assets/GAME/Levels/Forest camp/BanditCamp_Claude.unity",
+  "builtAt": "2026-10-22T10:49:20.1329321Z",
+  "unityVersion": "6000.3.11f1",
+  "assets": [
+    {
+      "path": "Build/GuildHub-20261022-103507.data.unityweb.part000",
+      "bytes": 94371840,
+      "sha256": "6c12a34c981c1becefccb2cfd67f728254e41455be6402712087a27d7107cb6f"
+    },
+    {
+      "path": "Build/GuildHub-20261022-103507.data.unityweb.part001",
+      "bytes": 94371840,
+      "sha256": "0e19179bc74ccd1356f0419567d230949f48243cc3a3186a28bc6a04ec144f63"
+    },
+    {
+      "path": "Build/GuildHub-20261022-103507.data.unityweb.part002",
+      "bytes": 39849075,
+      "sha256": "b46138adc09282dd67b96ee9786c5c70ddf15697c78cda0ca28c5670ea0c6cbc"
+    },
+    {
+      "path": "Build/GuildHub-20261022-103507.framework.js.unityweb",
+      "bytes": 91868,
+      "sha256": "b889be22121d5cb12823f1056a57677378748c321097ead624d40c467f82dbec"
+    },
+    {
+      "path": "Build/GuildHub-20261022-103507.loader.js",
+      "bytes": 47866,
+      "sha256": "ac829163a9013da3c55c863698fe2804ae9e6b9e34b2244886f75d982cbf56bc"
+    },
+    {
+      "path": "Build/GuildHub-20261022-103507.wasm.unityweb",
+      "bytes": 13322597,
+      "sha256": "3743f53b8dec0eeee348f68407869721747adac13c9ce7562ed4165282fbe84e"
+    }
+  ]
 }
