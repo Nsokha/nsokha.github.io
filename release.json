@@ -1,39 +1,44 @@
 {
-  "version": "GuildHub-20261022-103507",
+  "version": "GuildUI-20261023-100149",
   "scene": "Assets/GAME/Levels/_Hub/Hub.unity",
-  "missionScene": "Assets/GAME/Levels/Forest camp/BanditCamp_Claude.unity",
-  "builtAt": "2026-10-22T10:49:20.1329321Z",
+  "missionScene": "Assets/GAME/Levels/Forest camp/BanditCamp_Claude_variative.unity",
+  "builtAt": "2026-10-23T10:06:36.7517671Z",
   "unityVersion": "6000.3.11f1",
   "assets": [
     {
-      "path": "Build/GuildHub-20261022-103507.data.unityweb.part000",
+      "path": "Build/GuildUI-20261023-100149.data.unityweb.part000",
       "bytes": 94371840,
-      "sha256": "6c12a34c981c1becefccb2cfd67f728254e41455be6402712087a27d7107cb6f"
+      "sha256": "7c9f4401fc95755c9aac66697e08e1749f16f645f0f5a35be05f211f9a172e35"
     },
     {
-      "path": "Build/GuildHub-20261022-103507.data.unityweb.part001",
+      "path": "Build/GuildUI-20261023-100149.data.unityweb.part001",
       "bytes": 94371840,
-      "sha256": "0e19179bc74ccd1356f0419567d230949f48243cc3a3186a28bc6a04ec144f63"
+      "sha256": "675e6a5236dc9b3d6c73d1f140c4dbd11edf24308808d909fd11d6a521a0fecd"
     },
     {
-      "path": "Build/GuildHub-20261022-103507.data.unityweb.part002",
-      "bytes": 39849075,
-      "sha256": "b46138adc09282dd67b96ee9786c5c70ddf15697c78cda0ca28c5670ea0c6cbc"
+      "path": "Build/GuildUI-20261023-100149.data.unityweb.part002",
+      "bytes": 94371840,
+      "sha256": "00b6d65db3b363b21f9c52ff09a9fe1bc98496e7196c6c6576b17807e5a375e6"
     },
     {
-      "path": "Build/GuildHub-20261022-103507.framework.js.unityweb",
-      "bytes": 91868,
-      "sha256": "b889be22121d5cb12823f1056a57677378748c321097ead624d40c467f82dbec"
+      "path": "Build/GuildUI-20261023-100149.data.unityweb.part003",
+      "bytes": 30172287,
+      "sha256": "43ef4339abbd1094930d1b860f960a3340b99cd119648becd75da2ccea2266cb"
     },
     {
-      "path": "Build/GuildHub-20261022-103507.loader.js",
+      "path": "Build/GuildUI-20261023-100149.framework.js.unityweb",
+      "bytes": 92379,
+      "sha256": "1cbca6e5fce289cb4e59746b585dab87e37ba871137adf7209f4c718e9a2d55b"
+    },
+    {
+      "path": "Build/GuildUI-20261023-100149.loader.js",
       "bytes": 47866,
-      "sha256": "ac829163a9013da3c55c863698fe2804ae9e6b9e34b2244886f75d982cbf56bc"
+      "sha256": "8609a674c988e082995362981c12b78d4714f473532ab30d6bf2df3adfc3a823"
     },
     {
-      "path": "Build/GuildHub-20261022-103507.wasm.unityweb",
-      "bytes": 13322597,
-      "sha256": "3743f53b8dec0eeee348f68407869721747adac13c9ce7562ed4165282fbe84e"
+      "path": "Build/GuildUI-20261023-100149.wasm.unityweb",
+      "bytes": 13388715,
+      "sha256": "0d6c4320941378cec57e75b879ee6a26f333ad6ae12b4dfd63ee0f6edd4647d6"
     }
   ]
 }

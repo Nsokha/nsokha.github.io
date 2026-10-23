@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   <link rel="stylesheet" href="mobile-controls.css?v=62f51aec3da1b57f0f34bc3c98a279751cf151cfab5894563a98dd538105cb1d">
-<script src="split-build-GuildHub-20261022-103507.js?v=d955cc2eb689d201fa75520c3ef6d33b52995accf17ba73a57c91b78c5f51d74"></script>
+<script src="split-build-GuildUI-20261023-100149.js?v=d1b4fc23c69f6c0722f2eb1f3a3a6dde37a08ea7d2f2680f69c57f61b5408417"></script>
 </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -55,12 +55,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/GuildHub-20261022-103507.loader.js";
+      var loaderUrl = buildUrl + "/GuildUI-20261023-100149.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/GuildHub-20261022-103507.data.unityweb",
-        frameworkUrl: buildUrl + "/GuildHub-20261022-103507.framework.js.unityweb",
-        codeUrl: buildUrl + "/GuildHub-20261022-103507.wasm.unityweb",
+        dataUrl: buildUrl + "/GuildUI-20261023-100149.data.unityweb",
+        frameworkUrl: buildUrl + "/GuildUI-20261023-100149.framework.js.unityweb",
+        codeUrl: buildUrl + "/GuildUI-20261023-100149.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Danjee",
@@ -85,7 +85,7 @@
       // If you would like all file writes inside Unity Application.persistentDataPath
       // directory to automatically persist so that the contents are remembered when
       // the user revisits the site the next time, uncomment the following line:
-      // config.autoSyncPersistentDataPath = true;
+      config.autoSyncPersistentDataPath = true;
       // This autosyncing is currently not the default behavior to avoid regressing
       // existing user projects that might rely on the earlier manual
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
